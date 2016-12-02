@@ -2,9 +2,14 @@
 
 To run the page, download the zipfile the start it via index.html
 
-### Optimizations
+### Google Page Speed
 
-####index.html
+Page Speed before
+![Image 1](images/before.png)
+Page Speed after: 
+![Image 2](images/after.png)
+
+###index.html
 
 Adding Cache-control to the Header
 
@@ -22,11 +27,11 @@ Inline the style.css and the google font (changed URL)
 
 Resizing and Optimizing all images
 
-####pizza.html
+###pizza.html
 
 
 
-####main.js
+###main.js
 function changePizzaSizes was completely rewritten
 
     ```js
