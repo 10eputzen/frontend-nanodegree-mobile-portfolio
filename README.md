@@ -52,7 +52,8 @@ function changePizzaSizes was completely rewritten
         for (var i = 0; i < pizzaContainer.length; i++) {
             pizzaContainer[i].style.width = newwidth + "%";
         }
-    }```
+    }
+```
 
 
 changing the pizza count to 50
@@ -68,4 +69,5 @@ requesting an animation frame for the scrolling
 ```js
 window.addEventListener('scroll', function () {
    requestAnimationFrame(updatePositions);
-});```
+});
+```
