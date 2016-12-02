@@ -20,7 +20,9 @@ Inline the style.css and the google font (changed URL)
 ```<link href="css/style.css" rel="stylesheet">```
 ```  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">```
 
-Resizing and Optimizing all images
+Resizing and Optimizing all images with 
+- [Image Optimizer](http://www.imageoptimizer.net/Pages/Home.aspx/)
+
 
 ###Page Speed before
 ![Image 1](img/before.PNG)
