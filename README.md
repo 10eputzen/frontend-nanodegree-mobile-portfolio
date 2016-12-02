@@ -6,10 +6,21 @@ To run the page, download the zipfile the start it via index.html
 
 ####index.html
 
-* Adding Cache-control to the Header
-* Adding media print to the print.css
-* Inline the style.css and the google font (changed URL)
-* Resizing and Optimizing Images
+Adding Cache-control to the Header
+
+```<meta http-equiv="Cache-control" content="public">```
+```<meta http-equiv="expires" content="Tue, 01 Jan 2017 1:00:00 GMT">```
+
+Adding media print to the print.css
+
+```  <link href="css/print.css" rel="stylesheet" media="print">```
+
+Inline the style.css and the google font (changed URL)
+
+```<link href="css/style.css" rel="stylesheet">```
+```  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">```
+
+Resizing and Optimizing all images
 
 ####pizza.html
 
@@ -17,6 +28,7 @@ To run the page, download the zipfile the start it via index.html
 
 ####main.js
 function changePizzaSizes was completely rewritten
+
     ```function changePizzaSizes(size) {
         var newwidth;
         switch (size) {
@@ -38,10 +50,13 @@ function changePizzaSizes was completely rewritten
 
 
 changing the pizza count to 50
+
 ```document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
     for (var i = 0; i < 50; i++) {}```
+
+requesting an animation frame for the scrolling
 
 ```window.addEventListener('scroll', function () {
    requestAnimationFrame(updatePositions);
