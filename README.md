@@ -5,9 +5,9 @@ To run the page, download the zipfile the start it via index.html
 ### Google Page Speed
 
 Page Speed before
-![Image 1](images/before.png)
+![Image 1](images/before.PNG)
 Page Speed after: 
-![Image 2](images/after.png)
+![Image 2](images/after.PNG)
 
 ###index.html
 
