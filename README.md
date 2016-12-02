@@ -1,14 +1,8 @@
-## Website Performance Optimization portfolio project
+# Website Performance Optimization portfolio project
 
 To run the page, download the zipfile the start it via index.html
 
-### Google Page Speed
-
-Page Speed before
-![Image 1](img/before.PNG)
-
-Page Speed after: 
-![Image 2](img/after.PNG)
+## Google Page Speed
 
 ###index.html
 
@@ -28,14 +22,19 @@ Inline the style.css and the google font (changed URL)
 
 Resizing and Optimizing all images
 
-###pizza.html
+Page Speed before
+![Image 1](img/before.PNG)
+
+Page Speed after: 
+![Image 2](img/after.PNG)
 
 
+##Pizza Optimization
 
 ###main.js
 function changePizzaSizes was completely rewritten
 
-    ```js
+```js
     function changePizzaSizes(size) {
         var newwidth;
         switch (size) {
