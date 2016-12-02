@@ -29,7 +29,8 @@ Resizing and Optimizing all images
 ####main.js
 function changePizzaSizes was completely rewritten
 
-    ```function changePizzaSizes(size) {
+    ```js
+    function changePizzaSizes(size) {
         var newwidth;
         switch (size) {
             case "1":
@@ -51,13 +52,15 @@ function changePizzaSizes was completely rewritten
 
 changing the pizza count to 50
 
-```document.addEventListener('DOMContentLoaded', function() {
+```js
+document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
     for (var i = 0; i < 50; i++) {}```
 
 requesting an animation frame for the scrolling
 
-```window.addEventListener('scroll', function () {
+```js
+window.addEventListener('scroll', function () {
    requestAnimationFrame(updatePositions);
 });```
