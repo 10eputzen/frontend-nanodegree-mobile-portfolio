@@ -67,7 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
 requesting an animation frame for the scrolling
 
 ```js
-window.addEventListener('scroll', function () {
-   requestAnimationFrame(updatePositions);
-});
+	window.addEventListener('scroll', function () {
+	   requestAnimationFrame(updatePositions);
+	});
+```
+
+Changing the Update Position function
+
+```js
+    var items = document.querySelectorAll('.mover');
+    var top = (document.body.scrollTop / 1250);
+
+    for (var i = items.length; i--;) {
+        var phase = Math.sin(top + (i % 5));
+        var left = -items[i].basicLeft + 1000 * phase + 'px';
+        items[i].style.transform = "translateX(" + left + ") translateZ(0)";
+    }
 ```
