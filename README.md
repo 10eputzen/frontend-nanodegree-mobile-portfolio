@@ -22,10 +22,10 @@ Inline the style.css and the google font (changed URL)
 
 Resizing and Optimizing all images
 
-Page Speed before
+###Page Speed before
 ![Image 1](img/before.PNG)
 
-Page Speed after: 
+###Page Speed after: 
 ![Image 2](img/after.PNG)
 
 
@@ -84,3 +84,9 @@ Changing the Update Position function
         items[i].style.transform = "translateX(" + left + ") translateZ(0)";
     }
 ```
+
+###Scripting Time and Resize Pizza
+![Image 3](img/console1.PNG)
+
+###Timeline after Fix: 
+![Image 4](img/console2.PNG)
