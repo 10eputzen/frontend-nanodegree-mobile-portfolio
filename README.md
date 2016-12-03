@@ -9,7 +9,7 @@ For online testing I can reccomend using
 
 ## Google Page Speed
 
-(https://developers.google.com/speed/pagespeed/insights/?hl=de)
+https://developers.google.com/speed/pagespeed/insights/?hl=de
 
 ###index.html
 
