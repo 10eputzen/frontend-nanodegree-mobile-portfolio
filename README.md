@@ -1,8 +1,15 @@
 # Website Performance Optimization portfolio project
 
-To run the page, download the zipfile the start it via index.html
+To run the page, download the zipfile the start it via index.html for offline testing.
+
+For online testing I can reccomend using 
+
+[Github.io](https://pages.github.com/)
+
 
 ## Google Page Speed
+
+(https://developers.google.com/speed/pagespeed/insights/?hl=de)
 
 ###index.html
 
@@ -21,7 +28,7 @@ Inline the style.css and the google font (changed URL)
 ```  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">```
 
 Resizing and Optimizing all images with 
-- [Image Optimizer](http://www.imageoptimizer.net/Pages/Home.aspx/)
+[Image Optimizer](http://www.imageoptimizer.net/Pages/Home.aspx/)
 
 
 ###Page Speed before
