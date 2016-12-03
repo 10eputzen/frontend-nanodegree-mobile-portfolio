@@ -9,7 +9,7 @@ For online testing I would recommend using [Github.io](https://pages.github.com/
 
 https://developers.google.com/speed/pagespeed/insights/?hl=de
 
-###index.html
+### index.html
 
 Adding Cache-control to the Header
 
@@ -29,16 +29,16 @@ Resizing and Optimizing all images with
 [Image Optimizer](http://www.imageoptimizer.net/Pages/Home.aspx/)
 
 
-###Page Speed before
+### Page Speed before
 ![Image 1](img/before.PNG)
 
-###Page Speed after: 
+### Page Speed after: 
 ![Image 2](img/after.PNG)
 
 
 ##Pizza Optimization
 
-###main.js
+### main.js
 function changePizzaSizes was completely rewritten
 
 ```js
@@ -92,8 +92,38 @@ Changing the Update Position function
     }
 ```
 
-###Scripting Time and Resize Pizza
+### Scripting Time and Resize Pizza
 ![Image 3](img/console1.PNG)
 
-###Timeline after Fix: 
+### Timeline after Fix: 
 ![Image 4](img/console2.PNG)
+
+
+
+### Review 1
+
+Add a break to the switch function in changePizzaSizes()
+
+Using getElementsByClassName instead of querySelectorAll
+
+
+Creating an array with 5 values for the phase.
+Using this array in the item loop.
+
+```js
+	var items = document.getElementsByClassName('mover');
+    var top = (document.body.scrollTop / 1250);
+    var phase = [];
+    for (var i = 0; i < 5; i++) {
+        phase.push((Math.sin(top + i))*100);
+    }
+    for (var i = 0, max = items.length; i < max; i++) {
+        items[i].style.left = (items[i].basicLeft + phase[i % 5]) + 'px';
+    }
+```
+
+Adjusting the Number of pizzas to the height of the window
+
+```js
+
+	var numberOfPizzas = (window.innerHeight / s) * cols;

@@ -448,15 +448,19 @@ var resizePizzas = function(size) {
         switch (size) {
             case "1":
                 newwidth = 25;
+                break;
             case "2":
                 newwidth = 33.3;
+                break;
             case "3":
                 newwidth = 50;
+                break;
             default:
                 console.log("bug in sizeSwitcher");
+                break;
         }
         //getting the querySelector out of the loop
-        var pizzaContainer = document.querySelectorAll(".randomPizzaContainer")
+        var pizzaContainer = document.getElementsByClassName("randomPizzaContainer")
         for (var i = 0; i < pizzaContainer.length; i++) {
             pizzaContainer[i].style.width = newwidth + "%";
         }
@@ -507,14 +511,16 @@ function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
 
-    var items = document.querySelectorAll('.mover');
+    var items = document.getElementsByClassName('mover');
     var top = (document.body.scrollTop / 1250);
-
-    for (var i = items.length; i--;) {
-        var phase = Math.sin(top + (i % 5));
-        var left = -items[i].basicLeft + 1000 * phase + 'px';
-        items[i].style.transform = "translateX(" + left + ") translateZ(0)";
+    var phase = [];
+    for (var i = 0; i < 5; i++) {
+        phase.push((Math.sin(top + i))*100);
     }
+    for (var i = 0, max = items.length; i < max; i++) {
+        items[i].style.left = (items[i].basicLeft + phase[i % 5]) + 'px';
+    }
+
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
     // Super easy to create custom metrics.
@@ -536,7 +542,9 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 50; i++) {
+    //Adjusting the Number of pizzas to the height of the window
+    var numberOfPizzas = (window.innerHeight / s) * cols;
+    for (var i = 0; i < numberOfPizzas; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
