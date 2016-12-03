@@ -2,9 +2,7 @@
 
 To run the page, download the zipfile the start it via index.html for offline testing.
 
-For online testing I can reccomend using 
-
-[Github.io](https://pages.github.com/)
+For online testing I can reccomend using [Github.io](https://pages.github.com/)
 
 
 ## Google Page Speed
