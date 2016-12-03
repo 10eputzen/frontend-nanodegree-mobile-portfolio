@@ -122,7 +122,7 @@ Using this array in the item loop.
     }
 ```
 
-###########################################################
+***
 
 Adjusting the Number of pizzas to the height of the window
 
