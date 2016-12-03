@@ -98,7 +98,7 @@ Changing the Update Position function
 ### Timeline after Fix: 
 ![Image 4](img/console2.PNG)
 
-
+***
 
 ### Review 1
 
@@ -122,7 +122,7 @@ Using this array in the item loop.
     }
 ```
 
-***
+
 
 Adjusting the Number of pizzas to the height of the window
 
